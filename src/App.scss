@@ -1,0 +1,361 @@
+.App {
+  background-color:  #f4f6f7;
+}
+
+.dark-App {
+  background-color: #424242 ;
+}
+
+.green-App {
+  background-color: #c8e6c9;
+}
+
+.grey-App {
+  background-color: #fafafa;
+}
+
+.red-App {
+  background-color: #ffcdd2;
+}
+
+.purple-App {
+  background-color: #e1bee7;
+}
+
+.indigo-App {
+  background-color: #e8eaf6;
+}
+select,option {
+  color: #ebebeb !important;
+  box-shadow: none !important;
+  margin: 5px 5px 5px 5px;
+
+}
+
+select,option:focus{
+  box-shadow: none !important;
+  box-decoration-break: unset !important;
+}
+
+.jumbotron{
+  background-color: transparent;
+}
+
+.column {
+
+  align-items: center;
+  vertical-align: bottom;
+  border: cornsilk;
+  padding: 10px;
+  height: auto; /* Should be removed. Only for demonstration */
+}
+
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+  margin: auto;
+}
+
+.slider {
+  position: relative;
+  box-sizing: border-box;
+  display: flex;
+  align-items: center;
+  width: 100%;
+  height: auto;
+  overflow: hidden;
+
+}
+
+.slide {
+  transition: 1s;
+}
+
+%btn-styles {
+  position: absolute;
+  top: 45%;
+  transform: translateY(-50%);
+  width: 10%;
+  height: 83%;
+  background: none;
+  border: none;
+  outline: none;
+  transition: 0.5s;
+  i {
+    color: rgba(7, 7, 7, 0.514);
+  }
+  &:hover {
+    background-color: #49494963 ;
+    i {
+    color: whitesmoke;
+      }
+  }
+}
+#goLeft {
+  left: 12px;
+  @extend %btn-styles;
+}
+
+#goRight {
+  right: 0;
+  @extend %btn-styles;
+  }
+
+.headers{
+  font-size:5vw;
+  width: auto;
+  height: auto;
+  font-weight: 20px;
+  color: rgba(190, 190, 190, 0.836);
+  background-color: #227abd;
+  background-image: url("https://www.transparenttextures.com/patterns/brick-wall-dark.png");
+  .linethru{
+    background-color: #f4f6f7;
+    text-decoration: line-through;
+    width: auto;
+    color: rgba(49, 49, 49, 0.836);
+  }
+  i{
+    font-size:6vw;
+    width: auto;
+    height: auto;
+    background-color: rgba(7, 7, 7, 0.514);
+  }
+}
+
+.dark-headers {
+  font-size:5vw;
+  width: auto;
+  height: auto;
+  font-weight: 20px;
+  color: rgba(190, 190, 190, 0.836);
+  background-color: #212121;
+  background-image: url("https://www.transparenttextures.com/patterns/football-no-lines.png");
+  .linethru{
+    background-color: #424242 ;
+    text-decoration: line-through;
+    width: auto;
+    color: #ebebec;
+  }
+  i{
+    font-size:6vw;
+    width: auto;
+    height: auto;
+    background-color: rgba(7, 7, 7, 0.514);
+  }
+}
+
+.green-headers {
+  font-size:5vw;
+  width: auto;
+  height: auto;
+  font-weight: 20px;
+  color: rgba(190, 190, 190, 0.836);
+  background-color: #008c41;
+  background-image: url("https://www.transparenttextures.com/patterns/brick-wall-dark.png");
+  .linethru{
+    background-color: #c8e6c9;
+    text-decoration: line-through;
+    width: auto;
+    color: rgba(49, 49, 49, 0.836);
+  }
+  i{
+    font-size:6vw;
+    width: auto;
+    height: auto;
+    background-color: transparent;
+  }
+}
+
+.grey-headers {
+  font-size:5vw;
+  width: auto;
+  height: auto;
+  font-weight: 20px;
+  color: rgba(190, 190, 190, 0.836);
+  background-color: #757575;
+  background-image: url("https://www.transparenttextures.com/patterns/brick-wall-dark.png");
+  .linethru{
+    background-color: #fafafa;
+    text-decoration: line-through;
+    width: auto;
+    color: rgba(49, 49, 49, 0.836);
+  }
+  i{
+    font-size:6vw;
+    width: auto;
+    height: auto;
+    background-color: rgba(7, 7, 7, 0.514);
+  }
+}
+
+.red-headers {
+  font-size:5vw;
+  width: auto;
+  height: auto;
+  font-weight: 20px;
+  color: rgba(190, 190, 190, 0.836);
+  background-color: #e53935;
+  background-image: url("https://www.transparenttextures.com/patterns/brick-wall-dark.png");
+  .linethru{
+    background-color: #ffcdd2;
+    text-decoration: line-through;
+    width: auto;
+    color: rgba(49, 49, 49, 0.836);
+  }
+  i{
+    font-size:6vw;
+    width: auto;
+    height: auto;
+    background-color: rgba(7, 7, 7, 0.514);
+  }
+}
+
+.purple-headers {
+  font-size:5vw;
+  width: auto;
+  height: auto;
+  font-weight: 20px;
+  color: rgba(190, 190, 190, 0.836);
+  background-color: #8e24aa;
+  background-image: url("https://www.transparenttextures.com/patterns/brick-wall-dark.png");
+  .linethru{
+    background-color: #e1bee7;
+    text-decoration: line-through;
+    width: auto;
+    color: rgba(49, 49, 49, 0.836);
+  }
+  i{
+    font-size:6vw;
+    width: auto;
+    height: auto;
+    background-color: rgba(7, 7, 7, 0.514);
+  }
+}
+
+.indigo-headers {
+  font-size:5vw;
+  width: auto;
+  height: auto;
+  font-weight: 20px;
+  color: rgba(190, 190, 190, 0.836);
+  background-color: #3949ab;
+  background-image: url("https://www.transparenttextures.com/patterns/brick-wall-dark.png");
+  .linethru{
+    background-color: #e8eaf6;
+    text-decoration: line-through;
+    width: auto;
+    color: rgba(49, 49, 49, 0.836);
+  }
+  i{
+    font-size:6vw;
+    width: auto;
+    height: auto;
+    background-color: rgba(7, 7, 7, 0.514);
+  }
+}
+
+
+.brand-logo {
+  color: rgb(235, 235, 235) !important;
+  font-size: 5vw;
+  width: auto;
+  height: auto;
+  font-weight: 1000 !important;
+  border-radius: 20%;
+ &:hover {
+   text-decoration: none;
+   color: white;
+ }
+}
+
+.browser-default {
+  width: 100px;
+  margin-top: 1%;
+  padding: 5px 8px;
+  height: 50%;
+  background-color: transparent;
+  border: none;
+  border-bottom: 1px solid;
+  background-image: url("https://www.transparenttextures.com/patterns/fabric-of-squares.png");
+  box-shadow: none;
+  &:focus {
+    outline: none;
+  }
+}
+
+
+.navcolor {
+  background-color: #004f8c;
+  background-image: url("https://www.transparenttextures.com/patterns/clean-textile.png");
+}
+
+.dark-navcolor {
+  background-color: #212121;
+  background-image: url("https://www.transparenttextures.com/patterns/gravel.png");
+}
+
+.green-navcolor {
+  background-color: #008c41;
+  background-image: url("https://www.transparenttextures.com/patterns/clean-textile.png");
+}
+
+.grey-navcolor {
+  background-color: #757575;
+  background-image: url("https://www.transparenttextures.com/patterns/clean-textile.png");
+}
+
+.red-navcolor {
+  background-color: #b71c1c;
+  background-image: url("https://www.transparenttextures.com/patterns/clean-textile.png");
+}
+
+.purple-navcolor {
+  background-color: #8e24aa;
+  background-image: url("https://www.transparenttextures.com/patterns/clean-textile.png");
+}
+
+.indigo-navcolor {
+  background-color: #3949ab;
+  background-image: url("https://www.transparenttextures.com/patterns/clean-textile.png");
+}
+
+.slow{
+  transition: 2s;
+}
+
+// .foot {
+//   background-color: #004f8c !important;
+//   background-image: url("https://www.transparenttextures.com/patterns/clean-textile.png");
+// }
+
+// .dark-foot {
+//   background-color: #212121;
+//   background-image: url("https://www.transparenttextures.com/patterns/gravel.png");
+// }
+
+// .green-foot {
+//   background-color: #008c41;
+//   background-image: url("https://www.transparenttextures.com/patterns/clean-textile.png");
+// }
+
+// .grey-foot {
+//   background-color: #bdbdbd;
+//   background-image: url("https://www.transparenttextures.com/patterns/clean-textile.png");
+// }
+
+// .red-foot {
+//   background-color: #b71c1c;
+//   background-image: url("https://www.transparenttextures.com/patterns/clean-textile.png");
+// }
+
+// .purple-foot {
+//   background-color: #8e24aa;
+//   background-image: url("https://www.transparenttextures.com/patterns/clean-textile.png");
+// }
+
+// .indigo-foot {
+//   background-color: #3949ab;
+//   background-image: url("https://www.transparenttextures.com/patterns/clean-textile.png");
+// }

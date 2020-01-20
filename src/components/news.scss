@@ -1,0 +1,149 @@
+h3,p{
+    color: rgb(65, 65, 65) ;
+}
+body {
+    margin:7px;
+    background-image: linear-gradient(120deg, #fdfbfb 0%, #ebedee 100%);
+}
+div.polaroid {
+    width: 300px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 16px 20px 0 rgba(0, 0, 0, 0.19);
+    margin-bottom: 25px;
+    background-image: url("https://www.transparenttextures.com/patterns/asfalt-dark.png");
+    height: auto;
+
+  }
+
+  .card {
+    background-color:  #fffcfc;
+    height: auto;
+    background-image: url("https://www.transparenttextures.com/patterns/asfalt-dark.png");
+  }
+
+  .dark-card {
+    background-color: #9e9e9e;
+    height: auto;
+    background-image: url("https://www.transparenttextures.com/patterns/asfalt-dark.png");
+  }
+  
+  .green-card {
+    background-color: #a5d6a7;
+    height: auto;
+    background-image: url("https://www.transparenttextures.com/patterns/asfalt-dark.png");
+  }
+  
+  .grey-card {
+    background-color: #fafafa;
+    height: auto;
+    background-image: url("https://www.transparenttextures.com/patterns/asfalt-dark.png");
+  }
+  
+  .red-card {
+    background-color: #ef9a9a;
+    height: auto;
+    background-image: url("https://www.transparenttextures.com/patterns/asfalt-dark.png");
+  }
+  
+  .purple-card {
+    background-color: #ce93d8;
+    height: auto;
+    background-image: url("https://www.transparenttextures.com/patterns/asfalt-dark.png");
+  }
+  
+  .indigo-card {
+    background-color: #7986cb;
+    height: auto;
+    background-image: url("https://www.transparenttextures.com/patterns/asfalt-dark.png");
+  }
+
+  div.container {
+    text-align: center;
+    padding: 1px 2px;
+  }
+img{
+    width: 100% !important;
+    height: 200px !important;
+    border-radius: 2px;
+}
+
+.button {
+    border: none;
+    color: #666666 !important;
+    padding: 8px 16px;
+    text-align: center;
+    text-decoration: underline;
+    display: block;
+    font-size: 16px;
+    margin-top: 2px;
+    margin-left: 2vw;
+    margin-bottom: 1px;
+    cursor: pointer;
+    -webkit-transition-duration: 0.4s; /* Safari */
+    transition-duration: 0.4s;
+  }
+
+  .button1 {
+    border: none;
+    color: #666666 !important;
+    padding: 8px 16px;
+    text-align: center;
+    text-decoration: underline;
+    display: block;
+    font-size: 16px;
+    margin-top: 2px;
+    margin-left: 10vw;
+    margin-bottom: 1px;
+    cursor: pointer;
+    -webkit-transition-duration: 0.4s; /* Safari */
+    transition-duration: 0.4s;
+  }
+  
+  .button2:hover {
+    text-decoration: underline;
+  }
+h6 {
+    display: inline-block;
+    border-radius: 50%;
+}
+
+p {
+  width: 100%;
+  max-height: 100px;
+  padding: 1px 1px;
+  overflow: hidden;
+}
+
+.overflow-ellipsis {
+  text-overflow: ellipsis;
+}
+
+/* b{
+    white-space: nowrap; 
+    border-radius: 50%;
+    width: 10px;
+    text-overflow: ellipsis;
+    overflow: hidden;
+} */
+
+.column {
+
+    float: right;
+    width: 50%;
+    padding: 10px;
+    height: auto; /* Should be removed. Only for demonstration */
+  }
+  
+  /* Clear floats after the columns */
+  .row:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+
+.pic {
+  align-self: center;
+  padding-top: 20%;
+  width: 100% !important;
+    height: 200px !important;
+    border-radius: 2px;
+}
