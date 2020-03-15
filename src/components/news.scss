@@ -1,149 +1,186 @@
 h3,p{
-    color: rgb(65, 65, 65) ;
+  color: rgb(65, 65, 65) ;
 }
 body {
-    margin:7px;
-    background-image: linear-gradient(120deg, #fdfbfb 0%, #ebedee 100%);
+  margin:7px;
+  background-image: linear-gradient(120deg, #fdfbfb 0%, #ebedee 100%);
 }
 div.polaroid {
-    width: 300px;
-    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 16px 20px 0 rgba(0, 0, 0, 0.19);
-    margin-bottom: 25px;
-    background-image: url("https://www.transparenttextures.com/patterns/asfalt-dark.png");
-    height: auto;
+  width: 300px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 16px 20px 0 rgba(0, 0, 0, 0.19);
+  margin-bottom: 25px;
+  background-image: url("https://www.transparenttextures.com/patterns/asfalt-dark.png");
+  height: 400px;
 
-  }
+}
 
-  .card {
-    background-color:  #fffcfc;
-    height: auto;
-    background-image: url("https://www.transparenttextures.com/patterns/asfalt-dark.png");
-  }
+.card {
+  background-color:  #fffcfc;
+  height: 100%;
+  background-image: url("https://www.transparenttextures.com/patterns/asfalt-dark.png");
+}
 
-  .dark-card {
-    background-color: #9e9e9e;
-    height: auto;
-    background-image: url("https://www.transparenttextures.com/patterns/asfalt-dark.png");
-  }
-  
-  .green-card {
-    background-color: #a5d6a7;
-    height: auto;
-    background-image: url("https://www.transparenttextures.com/patterns/asfalt-dark.png");
-  }
-  
-  .grey-card {
-    background-color: #fafafa;
-    height: auto;
-    background-image: url("https://www.transparenttextures.com/patterns/asfalt-dark.png");
-  }
-  
-  .red-card {
-    background-color: #ef9a9a;
-    height: auto;
-    background-image: url("https://www.transparenttextures.com/patterns/asfalt-dark.png");
-  }
-  
-  .purple-card {
-    background-color: #ce93d8;
-    height: auto;
-    background-image: url("https://www.transparenttextures.com/patterns/asfalt-dark.png");
-  }
-  
-  .indigo-card {
-    background-color: #7986cb;
-    height: auto;
-    background-image: url("https://www.transparenttextures.com/patterns/asfalt-dark.png");
-  }
+.dark-card {
+  background-color: #9e9e9e;
+  height: auto;
+  background-image: url("https://www.transparenttextures.com/patterns/asfalt-dark.png");
+}
 
-  div.container {
-    text-align: center;
-    padding: 1px 2px;
-  }
+.green-card {
+  background-color: #a5d6a7;
+  height: auto;
+  background-image: url("https://www.transparenttextures.com/patterns/asfalt-dark.png");
+}
+
+.grey-card {
+  background-color: #fafafa;
+  height: auto;
+  background-image: url("https://www.transparenttextures.com/patterns/asfalt-dark.png");
+}
+
+.red-card {
+  background-color: #ef9a9a;
+  height: auto;
+  background-image: url("https://www.transparenttextures.com/patterns/asfalt-dark.png");
+}
+
+.purple-card {
+  background-color: #ce93d8;
+  height: auto;
+  background-image: url("https://www.transparenttextures.com/patterns/asfalt-dark.png");
+}
+
+.indigo-card {
+  background-color: #7986cb;
+  height: auto;
+  background-image: url("https://www.transparenttextures.com/patterns/asfalt-dark.png");
+}
+
+div.container {
+  text-align: center;
+  padding: 1px 2px;
+}
 img{
-    width: 100% !important;
-    height: 200px !important;
-    border-radius: 2px;
+  width: 100% !important;
+  height: 200px !important;
+  border-radius: 2px;
 }
 
 .button {
-    border: none;
-    color: #666666 !important;
-    padding: 8px 16px;
-    text-align: center;
-    text-decoration: underline;
-    display: block;
-    font-size: 16px;
-    margin-top: 2px;
-    margin-left: 2vw;
-    margin-bottom: 1px;
-    cursor: pointer;
-    -webkit-transition-duration: 0.4s; /* Safari */
-    transition-duration: 0.4s;
-  }
+  border: none;
+  color: #666666 !important;
+  padding: 8px 16px;
+  text-align: center;
+  text-decoration: underline;
+  display: block;
+  font-size: 16px;
+  margin-top: 2px;
+  margin-left: 2vw;
+  margin-bottom: 1px;
+  cursor: pointer;
+  -webkit-transition-duration: 0.4s; /* Safari */
+  transition-duration: 0.4s;
+}
 
-  .button1 {
-    border: none;
-    color: #666666 !important;
-    padding: 8px 16px;
-    text-align: center;
-    text-decoration: underline;
-    display: block;
-    font-size: 16px;
-    margin-top: 2px;
-    margin-left: 10vw;
-    margin-bottom: 1px;
-    cursor: pointer;
-    -webkit-transition-duration: 0.4s; /* Safari */
-    transition-duration: 0.4s;
-  }
-  
-  .button2:hover {
-    text-decoration: underline;
-  }
+.button1 {
+  border: none;
+  color: #666666 !important;
+  padding: 8px 16px;
+  text-align: center;
+  text-decoration: underline;
+  display: block;
+  font-size: 16px;
+  margin-top: 2px;
+  margin-left: 10vw;
+  margin-bottom: 1px;
+  cursor: pointer;
+  -webkit-transition-duration: 0.4s; /* Safari */
+  transition-duration: 0.4s;
+}
+
+.button2:hover {
+  text-decoration: underline;
+}
 h6 {
-    display: inline-block;
-    border-radius: 50%;
+  display: inline-block;
+  border-radius: 50%;
 }
 
 p {
-  width: 100%;
-  max-height: 100px;
-  padding: 1px 1px;
-  overflow: hidden;
+width: 100%;
+max-height: 100px;
+padding: 1px 1px;
+overflow: hidden;
 }
 
 .overflow-ellipsis {
-  text-overflow: ellipsis;
+text-overflow: hidden;
 }
 
+
+
 /* b{
-    white-space: nowrap; 
-    border-radius: 50%;
-    width: 10px;
-    text-overflow: ellipsis;
-    overflow: hidden;
+  white-space: nowrap; 
+  border-radius: 50%;
+  width: 10px;
+  text-overflow: ellipsis;
+  overflow: hidden;
 } */
 
 .column {
 
-    float: right;
-    width: 50%;
-    padding: 10px;
-    height: auto; /* Should be removed. Only for demonstration */
-  }
-  
-  /* Clear floats after the columns */
-  .row:after {
-    content: "";
-    display: table;
-    clear: both;
-  }
+  float: right;
+  width: 50%;
+  padding: 10px;
+  height: auto; /* Should be removed. Only for demonstration */
+}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
 
 .pic {
-  align-self: center;
-  padding-top: 20%;
-  width: 100% !important;
-    height: 200px !important;
-    border-radius: 2px;
+align-self: center;
+padding-top: 20%;
+width: 100% !important;
+  height: 200px !important;
+  border-radius: 2px;
+}
+
+.time {
+  margin-bottom: 0px;
+}
+
+.modal {
+  display: block; /* Hidden by default */
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Sit on top */
+  padding-top: 100px; /* Location of the box */
+  left: 0;
+  top: 0;
+  width: 100%; /* Full width */
+  height: 1000%; /* Full height */
+  overflow: auto; /* Enable scroll if needed */
+  background-color: rgb(0,0,0); /* Fallback color */
+  background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+}
+
+/* Modal Content */
+.modal-content {
+  background-color: #fefefe;
+  margin: auto;
+  padding: 20px;
+  border: 1px solid #888;
+  width: 80%;
+}
+
+/* The Close Button */
+.close {
+  color: #aaaaaa;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
 }

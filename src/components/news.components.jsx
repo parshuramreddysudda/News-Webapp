@@ -5,11 +5,11 @@ const News = ({title,image,description,url,content,author,time,name,winWidth,cit
     let newText = time.split('T');
     let newText1 = newText[1].split('Z');
     return(
-            <div className="row">
+        <div className="row">
                 <div className="col s3">
                     <a href={url} class="button button2">
-                    <div className="polaroid">
-                    <div className={`${theme}` === 'standard' ? `card` : `${theme}` === 'dark' ? `dark-card` : `${theme}` === 'green' ? `green-card` : `${theme}` === 'grey' ? `grey-card` : `${theme}` === 'red' ? `red-card` : `${theme}` === 'purple' ? `purple-card` : `${theme}` === 'indigo' ? `indigo-card` : `card`}>  
+                    <div className="polaroid card">
+                    <div className={`${theme}` === 'standard' ? `stan-card` : `${theme}` === 'dark' ? `dark-card` : `${theme}` === 'green' ? `green-card` : `${theme}` === 'grey' ? `grey-card` : `${theme}` === 'red' ? `red-card` : `${theme}` === 'purple' ? `purple-card` : `${theme}` === 'indigo' ? `indigo-card` : `card`}>  
                             {image? <img src={image} class="img-fluid" alt="Responsive image" /> : <div className="pic center-align"><i class="large material-icons">image</i></div>}
                             <div className="divider"></div>
                             <div className="row">
@@ -19,15 +19,14 @@ const News = ({title,image,description,url,content,author,time,name,winWidth,cit
                                     </div>
                                     <div className="container">
                                         <h6><small>{name}</small></h6>
-                                        <h6><small>{city}</small></h6>
                                     </div>
                                 </div>
                                 <div className="col s11">
                                     {title? <p class="overflow-ellipsis">{title}</p> : null}<br/>
-                                    {author ? <h6>-{author}</h6> : <h6>-unknown author</h6>}
+                                    {author ? <h6 class="overflow-ellipsis">-{author}</h6> : <h6>-unknown author</h6>}
                                 </div>
                             </div>
-                            {time? <h6><small><i class="tiny material-icons">date_range</i>{newText[0]} . <i class="tiny material-icons">access_time</i>{newText1[0]}</small></h6> : null}
+                            {time? <h6 class="time"><small><i class="tiny material-icons">date_range</i>{newText[0]} . <i class="tiny material-icons">access_time</i>{newText1[0]}</small></h6> : null}
                         </div>
                     </div>
                     </a>
@@ -35,8 +34,11 @@ const News = ({title,image,description,url,content,author,time,name,winWidth,cit
             </div>
             );
 }
- 
+
+
 export default News;
+ 
+
 
 {/* <div className="container">
                 <div className="row">
