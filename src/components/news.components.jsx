@@ -10,7 +10,7 @@ const News = ({title,image,description,url,content,author,time,name,winWidth,cit
                     <a href={url} class="button button2">
                     <div className="polaroid card">
                     <div className={`${theme}` === 'standard' ? `stan-card` : `${theme}` === 'dark' ? `dark-card` : `${theme}` === 'green' ? `green-card` : `${theme}` === 'grey' ? `grey-card` : `${theme}` === 'red' ? `red-card` : `${theme}` === 'purple' ? `purple-card` : `${theme}` === 'indigo' ? `indigo-card` : `card`}>  
-                            {image? <img src={image} class="img-fluid" alt="Responsive image" /> : <div className="pic center-align"><i class="large material-icons">image</i></div>}
+                            {image? <img src={image} class="img-fluid" alt="Responsive" /> : <div className="pic center-align"><i class="large material-icons">image</i></div>}
                             <div className="divider"></div>
                             <div className="row">
                                 <div className="col s1">

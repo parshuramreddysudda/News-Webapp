@@ -1,8 +1,7 @@
 import React, { useEffect, useState } from 'react';
 import DatePicker from 'react-date-picker';
-import GoogleMapReact from 'google-map-react';
 import "react-datepicker/dist/react-datepicker.css";
-import "./components/weather-icons/css/weather-icons.css";
+import "./components/weather-icons.css";
 import {
   BrowserRouter as Router,
   Switch,
@@ -11,7 +10,7 @@ import {
 } from "react-router-dom";
 import "./App.scss";
 import "bootstrap/dist/css/bootstrap.min.css";
-import News from "./components/news.components";
+// import News from "./components/news.components";
 import Weather from "./components/weather.components";
 
 
@@ -41,14 +40,14 @@ export default function App() {
       </nav>
       <Router>
         <div className={`${theme}` === 'standard' ? `App` : `${theme}` === 'dark' ? `dark-App` : `${theme}` === 'green' ? `green-App` : `${theme}` === 'grey' ? `grey-App` : `${theme}` === 'red' ? `red-App` : `${theme}` === 'purple' ? `purple-App` : `${theme}` === 'indigo' ? `indigo-App` : `App`}>
-          <div class="row">
-            <div class="col m4 center">
-              <div class="card">
+          <div className="row">
+            <div className="col m4 center">
+              <div className="card">
                 <div className={`${theme}` === 'standard' ? `stan-indexcard` : `${theme}` === 'dark' ? `dark-indexcard` : `${theme}` === 'green' ? `green-indexcard` : `${theme}` === 'grey' ? `grey-indexcard` : `${theme}` === 'red' ? `red-indexcard` : `${theme}` === 'purple' ? `purple-indexcard` : `${theme}` === 'indigo' ? `indigo-indexcard` : `stan-indexcard`}>
-                  <div class="card-content white-text">
-                    <span class="card-title"><i class="large material-icons">home</i><p class="white-text"><b>Current News</b><br /> (search with specific country).</p></span>
+                  <div className="card-content white-text">
+                    <span className="card-title"><i className="large material-icons">home</i><p className="white-text"><b>Current News</b><br /> (search with specific country).</p></span>
                   </div>
-                  <div class="card-action">
+                  <div className="card-action">
                     <li>
                       <Link to="/">
                         Current News
@@ -59,13 +58,13 @@ export default function App() {
               </div>
             </div>
 
-            <div class="col m4 center">
-              <div class="card">
+            <div className="col m4 center">
+              <div className="card">
                 <div className={`${theme}` === 'standard' ? `stan-indexcard` : `${theme}` === 'dark' ? `dark-indexcard` : `${theme}` === 'green' ? `green-indexcard` : `${theme}` === 'grey' ? `grey-indexcard` : `${theme}` === 'red' ? `red-indexcard` : `${theme}` === 'purple' ? `purple-indexcard` : `${theme}` === 'indigo' ? `indigo-indexcard` : `stan-indexcard`}>
-                  <div class="card-content white-text">
-                    <span class="card-title"><i class="large material-icons">search</i><p class="white-text"><b>News Search</b><br /> (search with specific keyword)</p></span>
+                  <div className="card-content white-text">
+                    <span className="card-title"><i className="large material-icons">search</i><p className="white-text"><b>News Search</b><br /> (search with specific keyword)</p></span>
                   </div>
-                  <div class="card-action">
+                  <div className="card-action">
                     <li>
                       <Link to="/about">News Search</Link>
                     </li>
@@ -73,13 +72,13 @@ export default function App() {
                 </div>
               </div>
             </div>
-            <div class="col m4 center">
-              <div class="card">
+            <div className="col m4 center">
+              <div className="card">
                 <div className={`${theme}` === 'standard' ? `stan-indexcard` : `${theme}` === 'dark' ? `dark-indexcard` : `${theme}` === 'green' ? `green-indexcard` : `${theme}` === 'grey' ? `grey-indexcard` : `${theme}` === 'red' ? `red-indexcard` : `${theme}` === 'purple' ? `purple-indexcard` : `${theme}` === 'indigo' ? `indigo-indexcard` : `stan-indexcard`}>
-                  <div class="card-content white-text">
-                    <span class="card-title"><i class="large material-icons">cloud</i><p class="white-text"><b>Weather News</b><br />(get the weather of specific City).</p></span>
+                  <div className="card-content white-text">
+                    <span className="card-title"><i className="large material-icons">cloud</i><p className="white-text"><b>Weather News</b><br />(get the weather of specific City).</p></span>
                   </div>
-                  <div class="card-action">
+                  <div className="card-action">
                     <li>
                       <Link to="/dashboard">Weather News</Link>
                     </li>
@@ -117,34 +116,34 @@ export default function App() {
           </Route>
         </Switch>
       </Router>
-      <footer id="footer" class={`${theme}` === 'standard' ? `navcolor` : `${theme}` === 'dark' ? `dark-navcolor` : `${theme}` === 'green' ? `green-navcolor` : `${theme}` === 'grey' ? `grey-navcolor` : `${theme}` === 'red' ? `red-navcolor` : `${theme}` === 'purple' ? `purple-navcolor` : `${theme}` === 'indigo' ? `indigo-navcolor` : `navcolor`} >
-        <div class="container">
-          <div class="row">
-            <div class="col l6 s12">
-              <h5 class="white-text">NEWS POOL</h5>
-              <p class="grey-text text-lighten-4">Special Thanks to <b>PLUS</b></p>
+      <footer id="footer" className={`${theme}` === 'standard' ? `navcolor` : `${theme}` === 'dark' ? `dark-navcolor` : `${theme}` === 'green' ? `green-navcolor` : `${theme}` === 'grey' ? `grey-navcolor` : `${theme}` === 'red' ? `red-navcolor` : `${theme}` === 'purple' ? `purple-navcolor` : `${theme}` === 'indigo' ? `indigo-navcolor` : `navcolor`} >
+        <div className="container">
+          <div className="row">
+            <div className="col l6 s12">
+              <h5 className="white-text">NEWS POOL</h5>
+              <p className="grey-text text-lighten-4">Special Thanks to <b>PLUS</b></p>
             </div>
-            <div class="col l4 offset-l2 s12 center">
-              <div class="row">
-                <ul class="col s6">
-                  <li><a class="grey-text text-lighten-3 slow" href="#business">Business</a></li>
-                  <li><a class="grey-text text-lighten-3 slow" href="#entertainment">Entertainment</a></li>
-                  <li><a class="grey-text text-lighten-3 slow" href="#general">General</a></li>
-                  <li><a class="grey-text text-lighten-3 slow" href="#health">Health</a></li>
+            <div className="col l4 offset-l2 s12 center">
+              <div className="row">
+                <ul className="col s6">
+                  <li><a className="grey-text text-lighten-3 slow" href="#business">Business</a></li>
+                  <li><a className="grey-text text-lighten-3 slow" href="#entertainment">Entertainment</a></li>
+                  <li><a className="grey-text text-lighten-3 slow" href="#general">General</a></li>
+                  <li><a className="grey-text text-lighten-3 slow" href="#health">Health</a></li>
                 </ul>
-                <ul class="col s6">
-                  <li><a class="grey-text text-lighten-3 slow" href="#science">Science</a></li>
-                  <li><a class="grey-text text-lighten-3 slow" href="#sports">Sports</a></li>
-                  <li><a class="grey-text text-lighten-3 slow" href="#technology">Technology</a></li>
+                <ul className="col s6">
+                  <li><a className="grey-text text-lighten-3 slow" href="#science">Science</a></li>
+                  <li><a className="grey-text text-lighten-3 slow" href="#sports">Sports</a></li>
+                  <li><a className="grey-text text-lighten-3 slow" href="#technology">Technology</a></li>
                 </ul>
               </div>
             </div>
           </div>
         </div>
-        <div class="footer-copyright">
-          <div class="container">
+        <div className="footer-copyright">
+          <div className="container">
             © 2020 Copyrights
-            <a class="grey-text text-lighten-4 right" href="https://newsapi.org">Thanks to NEWS-API</a>
+            <a className="grey-text text-lighten-4 right" href="https://newsapi.org">Thanks to NEWS-API</a>
           </div>
         </div>
       </footer>
@@ -155,7 +154,7 @@ export default function App() {
 const Home = ({ theme }) => {
 
   let newsno = 1;
-  const API_KEY = ""; //place your key here
+  const API_KEY = "66d4965851db4b4b9300f15d13443cfe"; //place your key here
   const [news, setNews] = useState([]);
   const [search, setSearch] = useState('in');
   const [news1, setNews1] = useState([]);
@@ -383,11 +382,11 @@ const Home = ({ theme }) => {
         <a href="#" id="projects">Projects</a>
         <a href="#" id="contact">Contact</a>
       </div>
-      <div class="row">
-        <div class="col s6">
+      <div className="row">
+        <div className="col s6">
 
         </div>
-        <div class="col s6">
+        <div className="col s6">
 
           <select className="browser-default country-tag right" value={search} onChange={updateSearch}>
             <option >country</option>
@@ -449,16 +448,16 @@ const Home = ({ theme }) => {
         </div>
       </div>
 
-      <p className={`${theme}` === 'standard' ? `headers` : `${theme}` === 'dark' ? `dark-headers` : `${theme}` === 'green' ? `green-headers` : `${theme}` === 'grey' ? `grey-headers` : `${theme}` === 'red' ? `red-headers` : `${theme}` === 'purple' ? `purple-headers` : `${theme}` === 'indigo' ? `indigo-headers` : `headers`} id="business" ><i class="large material-icons">business</i> BUSINESS <b className="linethru">News</b></p>
-      <div class={display ? `${window.innerWidth}` > 790 ? `lar-container` : `search-container` : `no-container`}>
-        <span onClick={() => { setDisplay(false); }} class="close">&times;</span>
+      <p className={`${theme}` === 'standard' ? `headers` : `${theme}` === 'dark' ? `dark-headers` : `${theme}` === 'green' ? `green-headers` : `${theme}` === 'grey' ? `grey-headers` : `${theme}` === 'red' ? `red-headers` : `${theme}` === 'purple' ? `purple-headers` : `${theme}` === 'indigo' ? `indigo-headers` : `headers`} id="business" ><i className="large material-icons">business</i> BUSINESS <b className="linethru">News</b></p>
+      <div className={display ? `${window.innerWidth}` > 790 ? `lar-container` : `search-container` : `no-container`}>
+        <span onClick={() => { setDisplay(false); }} className="close">&times;</span>
         <div className="con-content" style={{ backgroundImage: `url(${imgurl}`, backgroundPosition: "center center", backgroundSize: "cover", backgroundRepeat: "no-repeat" }}>
-          <section class="lp__grid">
-            <div class="lp__gridItem lp__gridItem__text">
-              <a href={srcurl} class="lp__gridItemText-sm">{name}</a>
-              <h2 class="lp__gridItemText-lg">{description}</h2>
-              <p class="lp__gridItemText-md">{content}</p>
-              {author ? <p class="lp__gridItemText-md lp__gridItemText-sm-bw"><strong><i class="medium material-icons">account_circle</i> {author}</strong> on {fulldate} {contTime}</p> : null}
+          <section className="lp__grid">
+            <div className="lp__gridItem lp__gridItem__text">
+              <a href={srcurl} className="lp__gridItemText-sm">{name}</a>
+              <h2 className="lp__gridItemText-lg">{description}</h2>
+              <p className="lp__gridItemText-md">{content}</p>
+              {author ? <p className="lp__gridItemText-md lp__gridItemText-sm-bw"><strong><i className="medium material-icons">account_circle</i> {author}</strong> on {fulldate} {contTime}</p> : null}
             </div>
           </section>
         </div>
@@ -466,7 +465,7 @@ const Home = ({ theme }) => {
       <div className={window.innerWidth > 790 ? `slider` : `row`} >
         {news.map((source, index) => (
           <div className="slide" key={index} style={{ transform: `translateX(${x}%)` }}>
-            <div class="button button2" >
+            <div className="button button2" >
               <div className="polaroid"
                 onClick={() => {
                   setDisplay(true);
@@ -481,20 +480,20 @@ const Home = ({ theme }) => {
                 }}>
                 <div className="card" id={`${theme}` === 'standard' ? `card` : `${theme}` === 'dark' ? `dark-card` : `${theme}` === 'green' ? `green-card` : `${theme}` === 'grey' ? `grey-card` : `${theme}` === 'red' ? `red-card` : `${theme}` === 'purple' ? `purple-card` : `${theme}` === 'indigo' ? `indigo-card` : `card`}>
                   <div style={{ backgroundImage: `url(${source.urlToImage}`, backgroundPosition: "center center", backgroundSize: "cover", backgroundRepeat: "no-repeat", height: "100%" }}>
-                    <div class="top-right">{index + 1}/{news.length}</div>
-                    <div class="top-left date">
-                      <span class="day">{setPubdate(source.publishedAt)}</span>
-                      <span class="month">{setPubmonth(source.publishedAt)}</span>
-                      <span class="year">{setPubyear(source.publishedAt)}</span>
-                      <span class="year">{setPubtime(source.publishedAt)}</span>
+                    <div className="top-right">{index + 1}/{news.length}</div>
+                    <div className="top-left date">
+                      <span className="day">{setPubdate(source.publishedAt)}</span>
+                      <span className="month">{setPubmonth(source.publishedAt)}</span>
+                      <span className="year">{setPubyear(source.publishedAt)}</span>
+                      <span className="year">{setPubtime(source.publishedAt)}</span>
                     </div>
-                    <div class="bottom-right">{source.source.name} </div>
+                    <div className="bottom-right">{source.source.name} </div>
                   </div>
 
-                  <div class="pol-container">
-                    {source.title ? <p class="overflow-ellipsis">{source.title}</p> : null}<br />
+                  <div className="pol-container">
+                    {source.title ? <p className="overflow-ellipsis">{source.title}</p> : null}<br />
                   </div>
-                  <div class="descontent">
+                  <div className="descontent">
                     <p>{source.description}</p>
                   </div>
                 </div>
@@ -503,24 +502,24 @@ const Home = ({ theme }) => {
           </div>
         ))}
         <button id="goLeft" className="hoverable hide-on-med-and-down" onClick={() => { x === 0 ? setX(-100 * (news.length - 4)) : setX(x + 300); }}>
-          <i class="large material-icons">chevron_left</i>
+          <i className="large material-icons">chevron_left</i>
         </button>
         <button id="goRight" className="hoverable hide-on-med-and-down" onClick={() => { x === -100 * (news.length - 4) ? setX(0) : setX(x - 300); }}>
-          <i class="large material-icons">chevron_right</i>
+          <i className="large material-icons">chevron_right</i>
         </button>
       </div>
 
 
-      {/* <p className={`${theme}` === 'standard' ? `headers` : `${theme}` === 'dark' ? `dark-headers` : `${theme}` === 'green' ? `green-headers` : `${theme}` === 'grey' ? `grey-headers` : `${theme}` === 'red' ? `red-headers` : `${theme}` === 'purple' ? `purple-headers` : `${theme}` === 'indigo' ? `indigo-headers` : `headers`} id="entertainment"><i class="large material-icons">movie</i> ENTERTAINMENT <b className="linethru">News</b></p>
-        <div class={display1 ? `${window.innerWidth}` > 790 ? `lar-container` : `search-container` : `no-container`}>
-          <span onClick={() => {setDisplay1(false);}} class="close">&times;</span>
+      {/* <p className={`${theme}` === 'standard' ? `headers` : `${theme}` === 'dark' ? `dark-headers` : `${theme}` === 'green' ? `green-headers` : `${theme}` === 'grey' ? `grey-headers` : `${theme}` === 'red' ? `red-headers` : `${theme}` === 'purple' ? `purple-headers` : `${theme}` === 'indigo' ? `indigo-headers` : `headers`} id="entertainment"><i className="large material-icons">movie</i> ENTERTAINMENT <b className="linethru">News</b></p>
+        <div className={display1 ? `${window.innerWidth}` > 790 ? `lar-container` : `search-container` : `no-container`}>
+          <span onClick={() => {setDisplay1(false);}} className="close">&times;</span>
           <div className="con-content" style={{backgroundImage: `url(${imgurl}`,backgroundSize: "cover",backgroundPosition: "center center",backgroundRepeat: "no-repeat",height: "90%"}}>
-            <section class="lp__grid">
-              <div class="lp__gridItem lp__gridItem__text">
-                <a href={srcurl} class="lp__gridItemText-sm">{name}</a>
-                <h2 class="lp__gridItemText-lg">{description}</h2>
-                <p class="lp__gridItemText-md">{content}</p>
-                {author ? <p class="lp__gridItemText-md lp__gridItemText-sm-bw"><strong>{author}</strong> on {fulldate}</p> : null }
+            <section className="lp__grid">
+              <div className="lp__gridItem lp__gridItem__text">
+                <a href={srcurl} className="lp__gridItemText-sm">{name}</a>
+                <h2 className="lp__gridItemText-lg">{description}</h2>
+                <p className="lp__gridItemText-md">{content}</p>
+                {author ? <p className="lp__gridItemText-md lp__gridItemText-sm-bw"><strong>{author}</strong> on {fulldate}</p> : null }
               </div>
             </section>
           </div>
@@ -528,7 +527,7 @@ const Home = ({ theme }) => {
         <div className={window.innerWidth > 790 ? `slider` : `row`}>
           {news1.map((source,index) =>  (
             <div className="slide" key={index} style={{transform: `translateX(${x1}%)`}}>
-              <div class="button button2" >
+              <div className="button button2" >
                 <div className="polaroid" 
                         onClick={() => {
                           setDisplay(false);
@@ -543,18 +542,18 @@ const Home = ({ theme }) => {
                         }}>
                   <div className="card" id={`${theme}` === 'standard' ? `stan-card` : `${theme}` === 'dark' ? `dark-card` : `${theme}` === 'green' ? `green-card` : `${theme}` === 'grey' ? `grey-card` : `${theme}` === 'red' ? `red-card` : `${theme}` === 'purple' ? `purple-card` : `${theme}` === 'indigo' ? `indigo-card` : `card`}>
                     <div style={{backgroundImage: `url(${source.urlToImage}`,backgroundPosition: "center center",backgroundSize: "cover",backgroundRepeat: "no-repeat",height: "100%"}}>
-                      <div class="top-right">{index + 1}/{news1.length}</div>
-                        <div class="top-left date">
-                          <span class="day">{setPubdate(source.publishedAt)}</span>
-                          <span class="month">{setPubmonth(source.publishedAt)}</span>
-                          <span class="year">{setPubyear(source.publishedAt)}</span>
+                      <div className="top-right">{index + 1}/{news1.length}</div>
+                        <div className="top-left date">
+                          <span className="day">{setPubdate(source.publishedAt)}</span>
+                          <span className="month">{setPubmonth(source.publishedAt)}</span>
+                          <span className="year">{setPubyear(source.publishedAt)}</span>
                         </div>
-                        <div class="bottom-right">{source.source.name} </div>
+                        <div className="bottom-right">{source.source.name} </div>
                       </div>
-                      <div class="pol-container">
-                        {source.title? <p class="overflow-ellipsis">{source.title}</p> : null}<br/>
+                      <div className="pol-container">
+                        {source.title? <p className="overflow-ellipsis">{source.title}</p> : null}<br/>
                       </div>
-                      <div class="descontent">
+                      <div className="descontent">
                         <p>{source.description}</p>
                       </div>
                     </div>
@@ -563,23 +562,23 @@ const Home = ({ theme }) => {
               </div>
         ))}
              <button id="goLeft" className="hoverable hide-on-med-and-down" onClick={() => {x1 === 0 ? setX1(-100*(news.length-4)) : setX1(x1 + 300);}}>
-              <i class="large material-icons">chevron_left</i>
+              <i className="large material-icons">chevron_left</i>
             </button>
             <button id="goRight" className="hoverable hide-on-med-and-down" onClick={() => {x1 === -100*(news.length-4) ? setX1(0) : setX1(x1 - 300);}}>
-              <i class="large material-icons">chevron_right</i>
+              <i className="large material-icons">chevron_right</i>
             </button>
           </div>
 
-      <p className={`${theme}` === 'standard' ? `headers` : `${theme}` === 'dark' ? `dark-headers` : `${theme}` === 'green' ? `green-headers` : `${theme}` === 'grey' ? `grey-headers` : `${theme}` === 'red' ? `red-headers` : `${theme}` === 'purple' ? `purple-headers` : `${theme}` === 'indigo' ? `indigo-headers` : `headers`} id="general"><i class="large material-icons">people </i> GENERAL <b className="linethru">News</b></p>
-      <div class={display2 ? `${window.innerWidth}` > 790 ? `lar-container` : `search-container` : `no-container`}>
-      <span onClick={() => {setDisplay2(false);}} class="close">&times;</span>
+      <p className={`${theme}` === 'standard' ? `headers` : `${theme}` === 'dark' ? `dark-headers` : `${theme}` === 'green' ? `green-headers` : `${theme}` === 'grey' ? `grey-headers` : `${theme}` === 'red' ? `red-headers` : `${theme}` === 'purple' ? `purple-headers` : `${theme}` === 'indigo' ? `indigo-headers` : `headers`} id="general"><i className="large material-icons">people </i> GENERAL <b className="linethru">News</b></p>
+      <div className={display2 ? `${window.innerWidth}` > 790 ? `lar-container` : `search-container` : `no-container`}>
+      <span onClick={() => {setDisplay2(false);}} className="close">&times;</span>
         <div className="con-content" style={{backgroundImage: `url(${imgurl}`,backgroundPosition: "center center",backgroundSize: "cover",backgroundRepeat: "no-repeat",height: "90%"}}>
-          <section class="lp__grid">
-            <div class="lp__gridItem lp__gridItem__text">
-              <a href={srcurl} class="lp__gridItemText-sm">{name}</a>
-              <h2 class="lp__gridItemText-lg">{description}</h2>
-              <p class="lp__gridItemText-md">{content}</p>
-              {author ? <p class="lp__gridItemText-md lp__gridItemText-sm-bw"><strong>{author}</strong> on {fulldate}</p> : null }
+          <section className="lp__grid">
+            <div className="lp__gridItem lp__gridItem__text">
+              <a href={srcurl} className="lp__gridItemText-sm">{name}</a>
+              <h2 className="lp__gridItemText-lg">{description}</h2>
+              <p className="lp__gridItemText-md">{content}</p>
+              {author ? <p className="lp__gridItemText-md lp__gridItemText-sm-bw"><strong>{author}</strong> on {fulldate}</p> : null }
             </div>
           </section>
         </div>
@@ -587,7 +586,7 @@ const Home = ({ theme }) => {
       <div className={window.innerWidth > 790 ? `slider` : `row`}>
         {news2.map((source,index) =>  (
           <div className="slide" key={index} style={{transform: `translateX(${x2}%)`}}>
-          <div class="button button2" >
+          <div className="button button2" >
                       <div className="polaroid" 
                         onClick={() => {
                           setDisplay(false);
@@ -602,19 +601,19 @@ const Home = ({ theme }) => {
                         }}>
                         <div className="card" id={`${theme}` === 'standard' ? `stan-card` : `${theme}` === 'dark' ? `dark-card` : `${theme}` === 'green' ? `green-card` : `${theme}` === 'grey' ? `grey-card` : `${theme}` === 'red' ? `red-card` : `${theme}` === 'purple' ? `purple-card` : `${theme}` === 'indigo' ? `indigo-card` : `card`}>
                         <div style={{backgroundImage: `url(${source.urlToImage}`,backgroundPosition: "center center",backgroundSize: "cover",backgroundRepeat: "no-repeat",height: "100%"}}>
-                            <div class="top-right">{index + 1}/{news2.length}</div>
-                            <div class="top-left date">
-                                <span class="day">{setPubdate(source.publishedAt)}</span>
-                                <span class="month">{setPubmonth(source.publishedAt)}</span>
-                                <span class="year">{setPubyear(source.publishedAt)}</span>
+                            <div className="top-right">{index + 1}/{news2.length}</div>
+                            <div className="top-left date">
+                                <span className="day">{setPubdate(source.publishedAt)}</span>
+                                <span className="month">{setPubmonth(source.publishedAt)}</span>
+                                <span className="year">{setPubyear(source.publishedAt)}</span>
                             </div>
-                            <div class="bottom-right">{source.source.name} </div>
+                            <div className="bottom-right">{source.source.name} </div>
                             
                         </div>
-                        <div class="pol-container">
-                                {source.title? <p class="overflow-ellipsis">{source.title}</p> : null}<br/>
+                        <div className="pol-container">
+                                {source.title? <p className="overflow-ellipsis">{source.title}</p> : null}<br/>
                             </div>
-                        <div class="descontent">
+                        <div className="descontent">
                             <p>{source.description}</p>
                         </div>
                         </div>
@@ -624,24 +623,24 @@ const Home = ({ theme }) => {
           </div>
         ))}
         <button id="goLeft" className="hoverable hide-on-med-and-down" onClick={() => {x2 === 0 ? setX2(-100*(news.length-4)) : setX2(x2 + 300);}}>
-          <i class="large material-icons">chevron_left</i>
+          <i className="large material-icons">chevron_left</i>
         </button>
         <button id="goRight" className="hoverable hide-on-med-and-down" onClick={() => {x2 === -100*(news.length-4) ? setX2(0) : setX2(x2 - 300);}}>
-          <i class="large material-icons">chevron_right</i>
+          <i className="large material-icons">chevron_right</i>
         </button>
       </div>
 
 
-      <p className={`${theme}` === 'standard' ? `headers` : `${theme}` === 'dark' ? `dark-headers` : `${theme}` === 'green' ? `green-headers` : `${theme}` === 'grey' ? `grey-headers` : `${theme}` === 'red' ? `red-headers` : `${theme}` === 'purple' ? `purple-headers` : `${theme}` === 'indigo' ? `indigo-headers` : `headers`} id="health"> <i class="large material-icons" style={{color: `red`}}>local_hospital</i> HEALTH <b className="linethru">News</b></p>
-      <div class={display3 ? `${window.innerWidth}` > 790 ? `lar-container` : `search-container` : `no-container`}>
-      <span onClick={() => {setDisplay3(false);}} class="close">&times;</span>
+      <p className={`${theme}` === 'standard' ? `headers` : `${theme}` === 'dark' ? `dark-headers` : `${theme}` === 'green' ? `green-headers` : `${theme}` === 'grey' ? `grey-headers` : `${theme}` === 'red' ? `red-headers` : `${theme}` === 'purple' ? `purple-headers` : `${theme}` === 'indigo' ? `indigo-headers` : `headers`} id="health"> <i className="large material-icons" style={{color: `red`}}>local_hospital</i> HEALTH <b className="linethru">News</b></p>
+      <div className={display3 ? `${window.innerWidth}` > 790 ? `lar-container` : `search-container` : `no-container`}>
+      <span onClick={() => {setDisplay3(false);}} className="close">&times;</span>
         <div className="con-content" style={{backgroundImage: `url(${imgurl}`,backgroundPosition: "center center",backgroundSize: "cover",backgroundRepeat: "no-repeat",height: "90%"}}>
-          <section class="lp__grid">
-            <div class="lp__gridItem lp__gridItem__text">
-              <a href={srcurl} class="lp__gridItemText-sm">{name}</a>
-              <h2 class="lp__gridItemText-lg">{description}</h2>
-              <p class="lp__gridItemText-md">{content}</p>
-              {author ? <p class="lp__gridItemText-md lp__gridItemText-sm-bw"><strong>{author}</strong> on {fulldate}</p> : null }
+          <section className="lp__grid">
+            <div className="lp__gridItem lp__gridItem__text">
+              <a href={srcurl} className="lp__gridItemText-sm">{name}</a>
+              <h2 className="lp__gridItemText-lg">{description}</h2>
+              <p className="lp__gridItemText-md">{content}</p>
+              {author ? <p className="lp__gridItemText-md lp__gridItemText-sm-bw"><strong>{author}</strong> on {fulldate}</p> : null }
             </div>
           </section>
         </div>
@@ -649,7 +648,7 @@ const Home = ({ theme }) => {
       <div className={window.innerWidth > 790 ? `slider` : `row`}>
         {news3.map((source,index) =>  (
           <div className="slide" key={index} style={{transform: `translateX(${x3}%)`}}>
-              <div class="button button2" >
+              <div className="button button2" >
                         <div className="polaroid" 
                         onClick={() => {
                           setDisplay(false);
@@ -664,19 +663,19 @@ const Home = ({ theme }) => {
                         }}>
                         <div className="card" id={`${theme}` === 'standard' ? `stan-card` : `${theme}` === 'dark' ? `dark-card` : `${theme}` === 'green' ? `green-card` : `${theme}` === 'grey' ? `grey-card` : `${theme}` === 'red' ? `red-card` : `${theme}` === 'purple' ? `purple-card` : `${theme}` === 'indigo' ? `indigo-card` : `card`}>
                         <div style={{backgroundImage: `url(${source.urlToImage}`,backgroundPosition: "center center",backgroundSize: "cover",backgroundRepeat: "no-repeat",height: "100%"}}>
-                            <div class="top-right">{index + 1}/{news3.length}</div>
-                            <div class="top-left date">
-                                <span class="day">{setPubdate(source.publishedAt)}</span>
-                                <span class="month">{setPubmonth(source.publishedAt)}</span>
-                                <span class="year">{setPubyear(source.publishedAt)}</span>
+                            <div className="top-right">{index + 1}/{news3.length}</div>
+                            <div className="top-left date">
+                                <span className="day">{setPubdate(source.publishedAt)}</span>
+                                <span className="month">{setPubmonth(source.publishedAt)}</span>
+                                <span className="year">{setPubyear(source.publishedAt)}</span>
                             </div>
-                            <div class="bottom-right">{source.source.name} </div>
+                            <div className="bottom-right">{source.source.name} </div>
                             
                         </div>
-                        <div class="pol-container">
-                                {source.title? <p class="overflow-ellipsis">{source.title}</p> : null}<br/>
+                        <div className="pol-container">
+                                {source.title? <p className="overflow-ellipsis">{source.title}</p> : null}<br/>
                             </div>
-                        <div class="descontent">
+                        <div className="descontent">
                             <p>{source.description}</p>
                         </div>
                         </div>
@@ -687,24 +686,24 @@ const Home = ({ theme }) => {
 
         ))}
         <button id="goLeft" className="hoverable hide-on-med-and-down" onClick={() => {x3 === 0 ? setX3(-100*(news.length-4)) : setX3(x3 + 300);}}>
-          <i class="large material-icons">chevron_left</i>
+          <i className="large material-icons">chevron_left</i>
         </button>
         <button id="goRight" className="hoverable hide-on-med-and-down" onClick={() => {x3 === -100*(news.length-4) ? setX3(0) : setX3(x3 - 300);}}>
-          <i class="large material-icons">chevron_right</i>
+          <i className="large material-icons">chevron_right</i>
         </button>
       </div>
 
 
-      <p className={`${theme}` === 'standard' ? `headers` : `${theme}` === 'dark' ? `dark-headers` : `${theme}` === 'green' ? `green-headers` : `${theme}` === 'grey' ? `grey-headers` : `${theme}` === 'red' ? `red-headers` : `${theme}` === 'purple' ? `purple-headers` : `${theme}` === 'indigo' ? `indigo-headers` : `headers`} id="science"> <i class="large material-icons" style={{color: `yellow`}}>lightbulb_outline</i> SCIENCE <b className="linethru">News</b></p>
-      <div class={display4 ? `${window.innerWidth}` > 790 ? `lar-container` : `search-container` : `no-container`}>
-      <span onClick={() => {setDisplay(false);}} class="close">&times;</span>
+      <p className={`${theme}` === 'standard' ? `headers` : `${theme}` === 'dark' ? `dark-headers` : `${theme}` === 'green' ? `green-headers` : `${theme}` === 'grey' ? `grey-headers` : `${theme}` === 'red' ? `red-headers` : `${theme}` === 'purple' ? `purple-headers` : `${theme}` === 'indigo' ? `indigo-headers` : `headers`} id="science"> <i className="large material-icons" style={{color: `yellow`}}>lightbulb_outline</i> SCIENCE <b className="linethru">News</b></p>
+      <div className={display4 ? `${window.innerWidth}` > 790 ? `lar-container` : `search-container` : `no-container`}>
+      <span onClick={() => {setDisplay(false);}} className="close">&times;</span>
         <div className="con-content" style={{backgroundImage: `url(${imgurl}`,backgroundPosition: "center center",backgroundSize: "cover",backgroundRepeat: "no-repeat",height: "90%"}}>
-          <section class="lp__grid">
-            <div class="lp__gridItem lp__gridItem__text">
-              <a href={srcurl} class="lp__gridItemText-sm">{name}</a>
-              <h2 class="lp__gridItemText-lg">{description}</h2>
-              <p class="lp__gridItemText-md">{content}</p>
-              {author ? <p class="lp__gridItemText-md lp__gridItemText-sm-bw"><strong>{author}</strong> on {fulldate}</p> : null }
+          <section className="lp__grid">
+            <div className="lp__gridItem lp__gridItem__text">
+              <a href={srcurl} className="lp__gridItemText-sm">{name}</a>
+              <h2 className="lp__gridItemText-lg">{description}</h2>
+              <p className="lp__gridItemText-md">{content}</p>
+              {author ? <p className="lp__gridItemText-md lp__gridItemText-sm-bw"><strong>{author}</strong> on {fulldate}</p> : null }
             </div>
           </section>
         </div>
@@ -712,7 +711,7 @@ const Home = ({ theme }) => {
       <div className={window.innerWidth > 790 ? `slider` : `row`}>
         {news4.map((source,index) =>  (
           <div className="slide" key={index} style={{transform: `translateX(${x4}%)`}}>
-          <div class="button button2" >
+          <div className="button button2" >
                         <div className="polaroid" 
                         onClick={() => {
                           setDisplay(false);
@@ -727,19 +726,19 @@ const Home = ({ theme }) => {
                         }}>
                         <div className="card" id={`${theme}` === 'standard' ? `stan-card` : `${theme}` === 'dark' ? `dark-card` : `${theme}` === 'green' ? `green-card` : `${theme}` === 'grey' ? `grey-card` : `${theme}` === 'red' ? `red-card` : `${theme}` === 'purple' ? `purple-card` : `${theme}` === 'indigo' ? `indigo-card` : `card`}>
                         <div style={{backgroundImage: `url(${source.urlToImage}`,backgroundPosition: "center center",backgroundSize: "cover",backgroundRepeat: "no-repeat",height: "100%"}}>
-                            <div class="top-right">{index + 1}/{news4.length}</div>
-                            <div class="top-left date">
-                                <span class="day">{setPubdate(source.publishedAt)}</span>
-                                <span class="month">{setPubmonth(source.publishedAt)}</span>
-                                <span class="year">{setPubyear(source.publishedAt)}</span>
+                            <div className="top-right">{index + 1}/{news4.length}</div>
+                            <div className="top-left date">
+                                <span className="day">{setPubdate(source.publishedAt)}</span>
+                                <span className="month">{setPubmonth(source.publishedAt)}</span>
+                                <span className="year">{setPubyear(source.publishedAt)}</span>
                             </div>
-                            <div class="bottom-right">{source.source.name} </div>
+                            <div className="bottom-right">{source.source.name} </div>
                             
                         </div>
-                        <div class="pol-container">
-                                {source.title? <p class="overflow-ellipsis">{source.title}</p> : null}<br/>
+                        <div className="pol-container">
+                                {source.title? <p className="overflow-ellipsis">{source.title}</p> : null}<br/>
                             </div>
-                        <div class="descontent">
+                        <div className="descontent">
                             <p>{source.description}</p>
                         </div>
                         </div>
@@ -749,24 +748,24 @@ const Home = ({ theme }) => {
           </div>
         ))}
         <button id="goLeft" className="hoverable hide-on-med-and-down" onClick={() => {x4 >= 0 ? setX4(-100*(news4.length-4)) : setX4(x4 + 300);}}>
-          <i class="large material-icons">chevron_left</i>
+          <i className="large material-icons">chevron_left</i>
         </button>
         <button id="goRight" className="hoverable hide-on-med-and-down" onClick={() => {x4 <= -100*(news4.length-4) ? setX4(0) : setX4(x4 - 300);}}>
-          <i class="large material-icons">chevron_right</i>
+          <i className="large material-icons">chevron_right</i>
         </button>
       </div>
 
 
-      <p className={`${theme}` === 'standard' ? `headers` : `${theme}` === 'dark' ? `dark-headers` : `${theme}` === 'green' ? `green-headers` : `${theme}` === 'grey' ? `grey-headers` : `${theme}` === 'red' ? `red-headers` : `${theme}` === 'purple' ? `purple-headers` : `${theme}` === 'indigo' ? `indigo-headers` : `headers`} id="sports"><i class="large material-icons">directions_run </i> SPORTS <b className="linethru">News</b></p>
-      <div class={display5 ? `${window.innerWidth}` > 790 ? `lar-container` : `search-container` : `no-container`}>
-      <span onClick={() => {setDisplay5(false);}} class="close">&times;</span>
+      <p className={`${theme}` === 'standard' ? `headers` : `${theme}` === 'dark' ? `dark-headers` : `${theme}` === 'green' ? `green-headers` : `${theme}` === 'grey' ? `grey-headers` : `${theme}` === 'red' ? `red-headers` : `${theme}` === 'purple' ? `purple-headers` : `${theme}` === 'indigo' ? `indigo-headers` : `headers`} id="sports"><i className="large material-icons">directions_run </i> SPORTS <b className="linethru">News</b></p>
+      <div className={display5 ? `${window.innerWidth}` > 790 ? `lar-container` : `search-container` : `no-container`}>
+      <span onClick={() => {setDisplay5(false);}} className="close">&times;</span>
         <div className="con-content" style={{backgroundImage: `url(${imgurl}`,backgroundPosition: "center center",backgroundSize: "cover",backgroundRepeat: "no-repeat",height: "90%"}}>
-          <section class="lp__grid">
-            <div class="lp__gridItem lp__gridItem__text">
-              <a href={srcurl} class="lp__gridItemText-sm">{name}</a>
-              <h2 class="lp__gridItemText-lg">{description}</h2>
-              <p class="lp__gridItemText-md">{content}</p>
-              {author ? <p class="lp__gridItemText-md lp__gridItemText-sm-bw"><strong>{author}</strong> on {fulldate}</p> : null }
+          <section className="lp__grid">
+            <div className="lp__gridItem lp__gridItem__text">
+              <a href={srcurl} className="lp__gridItemText-sm">{name}</a>
+              <h2 className="lp__gridItemText-lg">{description}</h2>
+              <p className="lp__gridItemText-md">{content}</p>
+              {author ? <p className="lp__gridItemText-md lp__gridItemText-sm-bw"><strong>{author}</strong> on {fulldate}</p> : null }
             </div>
           </section>
         </div>
@@ -774,7 +773,7 @@ const Home = ({ theme }) => {
       <div className={window.innerWidth > 790 ? `slider` : `row`}>
         {news5.map((source,index) =>  (
           <div className="slide" key={index} style={{transform: `translateX(${x5}%)`}}>
-          <div class="button button2" >
+          <div className="button button2" >
                         <div className="polaroid" 
                         onClick={() => {
                           setDisplay(false);
@@ -789,19 +788,19 @@ const Home = ({ theme }) => {
                         }}>
                         <div className="card" id={`${theme}` === 'standard' ? `stan-card` : `${theme}` === 'dark' ? `dark-card` : `${theme}` === 'green' ? `green-card` : `${theme}` === 'grey' ? `grey-card` : `${theme}` === 'red' ? `red-card` : `${theme}` === 'purple' ? `purple-card` : `${theme}` === 'indigo' ? `indigo-card` : `card`}>
                         <div style={{backgroundImage: `url(${source.urlToImage}`,backgroundPosition: "center center",backgroundSize: "cover",backgroundRepeat: "no-repeat",height: "100%"}}>
-                            <div class="top-right">{index + 1}/{news5.length}</div>
-                            <div class="top-left date">
-                                <span class="day">{setPubdate(source.publishedAt)}</span>
-                                <span class="month">{setPubmonth(source.publishedAt)}</span>
-                                <span class="year">{setPubyear(source.publishedAt)}</span>
+                            <div className="top-right">{index + 1}/{news5.length}</div>
+                            <div className="top-left date">
+                                <span className="day">{setPubdate(source.publishedAt)}</span>
+                                <span className="month">{setPubmonth(source.publishedAt)}</span>
+                                <span className="year">{setPubyear(source.publishedAt)}</span>
                             </div>
-                            <div class="bottom-right">{source.source.name} </div>
+                            <div className="bottom-right">{source.source.name} </div>
                             
                         </div>
-                        <div class="pol-container">
-                                {source.title? <p class="overflow-ellipsis">{source.title}</p> : null}<br/>
+                        <div className="pol-container">
+                                {source.title? <p className="overflow-ellipsis">{source.title}</p> : null}<br/>
                             </div>
-                        <div class="descontent">
+                        <div className="descontent">
                             <p>{source.description}</p>
                         </div>
                         </div>
@@ -811,24 +810,24 @@ const Home = ({ theme }) => {
           </div>
         ))}
         <button id="goLeft" className="hoverable hide-on-med-and-down" onClick={() => {x5 >= 0 ? setX5(-100*(news.length-4)) : setX5(x5 + 300);}}>
-          <i class="large material-icons">chevron_left</i>
+          <i className="large material-icons">chevron_left</i>
         </button>
         <button id="goRight" className="hoverable hide-on-med-and-down" onClick={() => {x5 <= -100*(news.length-4) ? setX5(0) : setX5(x5 - 300);}}>
-          <i class="large material-icons">chevron_right</i>
+          <i className="large material-icons">chevron_right</i>
         </button>
       </div>
 
 
-      <p className={`${theme}` === 'standard' ? `headers` : `${theme}` === 'dark' ? `dark-headers` : `${theme}` === 'green' ? `green-headers` : `${theme}` === 'grey' ? `grey-headers` : `${theme}` === 'red' ? `red-headers` : `${theme}` === 'purple' ? `purple-headers` : `${theme}` === 'indigo' ? `indigo-headers` : `headers`} id="technology"><i class="large material-icons">phonelink </i> TECHNOLOGY <b className="linethru">News</b></p>
-      <div class={display6 ? `${window.innerWidth}` > 790 ? `lar-container` : `search-container` : `no-container`}>
-      <span onClick={() => {setDisplay6(false);}} class="close">&times;</span>
+      <p className={`${theme}` === 'standard' ? `headers` : `${theme}` === 'dark' ? `dark-headers` : `${theme}` === 'green' ? `green-headers` : `${theme}` === 'grey' ? `grey-headers` : `${theme}` === 'red' ? `red-headers` : `${theme}` === 'purple' ? `purple-headers` : `${theme}` === 'indigo' ? `indigo-headers` : `headers`} id="technology"><i className="large material-icons">phonelink </i> TECHNOLOGY <b className="linethru">News</b></p>
+      <div className={display6 ? `${window.innerWidth}` > 790 ? `lar-container` : `search-container` : `no-container`}>
+      <span onClick={() => {setDisplay6(false);}} className="close">&times;</span>
         <div className="con-content" style={{backgroundImage: `url(${imgurl}`,backgroundPosition: "center center",backgroundSize: "cover",backgroundRepeat: "no-repeat",height: "90%"}}>
-          <section class="lp__grid">
-            <div class="lp__gridItem lp__gridItem__text">
-              <a href={srcurl} class="lp__gridItemText-sm">{name}</a>
-              <h2 class="lp__gridItemText-lg">{description}</h2>
-              <p class="lp__gridItemText-md">{content}</p>
-              {author ? <p class="lp__gridItemText-md lp__gridItemText-sm-bw"><strong>{author}</strong> on {fulldate}</p> : null }
+          <section className="lp__grid">
+            <div className="lp__gridItem lp__gridItem__text">
+              <a href={srcurl} className="lp__gridItemText-sm">{name}</a>
+              <h2 className="lp__gridItemText-lg">{description}</h2>
+              <p className="lp__gridItemText-md">{content}</p>
+              {author ? <p className="lp__gridItemText-md lp__gridItemText-sm-bw"><strong>{author}</strong> on {fulldate}</p> : null }
             </div>
           </section>
         </div>
@@ -836,7 +835,7 @@ const Home = ({ theme }) => {
       <div className={window.innerWidth > 790 ? `slider` : `row`}>
         {news6.map((source,index) =>  (
           <div className="slide" key={index} style={{transform: `translateX(${x6}%)`}}>
-          <div class="button button2" >
+          <div className="button button2" >
                         <div className="polaroid" 
                         onClick={() => {
                           setDisplay(false);
@@ -851,19 +850,19 @@ const Home = ({ theme }) => {
                         }}>
                         <div className="card" id={`${theme}` === 'standard' ? `stan-card` : `${theme}` === 'dark' ? `dark-card` : `${theme}` === 'green' ? `green-card` : `${theme}` === 'grey' ? `grey-card` : `${theme}` === 'red' ? `red-card` : `${theme}` === 'purple' ? `purple-card` : `${theme}` === 'indigo' ? `indigo-card` : `card`}>
                         <div style={{backgroundImage: `url(${source.urlToImage}`,backgroundPosition: "center center",backgroundSize: "cover",backgroundRepeat: "no-repeat",height: "100%"}}>
-                            <div class="top-right">{index + 1}/{news6.length}</div>
-                            <div class="top-left date">
-                                <span class="day">{setPubdate(source.publishedAt)}</span>
-                                <span class="month">{setPubmonth(source.publishedAt)}</span>
-                                <span class="year">{setPubyear(source.publishedAt)}</span>
+                            <div className="top-right">{index + 1}/{news6.length}</div>
+                            <div className="top-left date">
+                                <span className="day">{setPubdate(source.publishedAt)}</span>
+                                <span className="month">{setPubmonth(source.publishedAt)}</span>
+                                <span className="year">{setPubyear(source.publishedAt)}</span>
                             </div>
-                            <div class="bottom-right">{source.source.name} </div>
+                            <div className="bottom-right">{source.source.name} </div>
                             
                         </div>
-                        <div class="pol-container">
-                                {source.title? <p class="overflow-ellipsis">{source.title}</p> : null}<br/>
+                        <div className="pol-container">
+                                {source.title? <p className="overflow-ellipsis">{source.title}</p> : null}<br/>
                             </div>
-                        <div class="descontent">
+                        <div className="descontent">
                             <p>{source.description}</p>
                         </div>
                         </div>
@@ -873,10 +872,10 @@ const Home = ({ theme }) => {
           </div>
         ))}
         <button id="goLeft" className="hoverable hide-on-med-and-down" onClick={() => {x6 >= 0 ? setX6(-100*(news.length-4)) : setX6(x6 + 300);}}>
-          <i class="large material-icons">chevron_left</i>
+          <i className="large material-icons">chevron_left</i>
         </button>
         <button id="goRight" className="hoverable hide-on-med-and-down" onClick={() => {x6 <= -100*(news.length-4) ? setX6(0) : setX6(x6 - 300);}}>
-          <i class="large material-icons">chevron_right</i>
+          <i className="large material-icons">chevron_right</i>
         </button>
       </div> */}
 
@@ -1118,12 +1117,12 @@ const About = ({ theme }) => {
   // }; 
   return (
     <div className={`${theme}` === 'standard' ? `App` : `${theme}` === 'dark' ? `dark-App` : `${theme}` === 'green' ? `green-App` : `${theme}` === 'grey' ? `grey-App` : `${theme}` === 'red' ? `red-App` : `${theme}` === 'purple' ? `purple-App` : `${theme}` === 'indigo' ? `indigo-App` : `App`}>
-      <div class="row">
+      <div className="row">
         <div className="col s12">
           <form onSubmit={getSearch}>
-            <div class="search">
-              <input type="text" class="searchTerm" placeholder="What are you looking for?" value={search} onChange={updateSearch} />
-              <div class="datepicker">
+            <div className="search">
+              <input type="text" className="searchTerm" placeholder="What are you looking for?" value={search} onChange={updateSearch} />
+              <div className="datepicker">
                 <DatePicker
                   format="y-MM-dd"
                   onChange={onChange}
@@ -1135,8 +1134,8 @@ const About = ({ theme }) => {
                   yearPlaceholder="yyyy"
                 />
               </div>
-              <button type="submit" class="searchButton">
-                <i class="tiny material-icons">search</i>
+              <button type="submit" className="searchButton">
+                <i className="tiny material-icons">search</i>
               </button>
               <select className="browser-default filter-tag right " value={filter} onChange={getFilter}>
                 <option>sortby</option>
@@ -1148,21 +1147,21 @@ const About = ({ theme }) => {
           </form>
         </div>
       </div>
-      <p className={`${theme}` === 'standard' ? `headers` : `${theme}` === 'dark' ? `dark-headers` : `${theme}` === 'green' ? `green-headers` : `${theme}` === 'grey' ? `grey-headers` : `${theme}` === 'red' ? `red-headers` : `${theme}` === 'purple' ? `purple-headers` : `${theme}` === 'indigo' ? `indigo-headers` : `headers`} id="business"><i class="large material-icons">date_range</i> {query}  <b className="linethru">News</b></p>
-      <div class={display ? `search-container` : `no-container`}>
+      <p className={`${theme}` === 'standard' ? `headers` : `${theme}` === 'dark' ? `dark-headers` : `${theme}` === 'green' ? `green-headers` : `${theme}` === 'grey' ? `grey-headers` : `${theme}` === 'red' ? `red-headers` : `${theme}` === 'purple' ? `purple-headers` : `${theme}` === 'indigo' ? `indigo-headers` : `headers`} id="business"><i className="large material-icons">date_range</i> {query}  <b className="linethru">News</b></p>
+      <div className={display ? `search-container` : `no-container`}>
         <div className="modSlider" >
           {news.map((source, index) => {
             return (
               <div className="modSlide" key={index} style={{ transform: `translateX(${xm}%)` }}>
                 <div className="con-content" style={{ backgroundImage: `url(${source.urlToImage})`, backgroundPosition: "center center", backgroundSize: "cover", backgroundRepeat: "no-repeat", height: "90%" }}>
-                  <span onClick={() => { setDisplay(false); }} class="close">&times;</span>
-                  <div class="top-left1">{index + 1}/{news.length}</div>
-                  <section class="lp__grid">
-                    <div class="lp__gridItem lp__gridItem__text">
-                      <a href={source.url} class="lp__gridItemText-sm">{source.title}</a>
-                      <h2 class="lp__gridItemText-lg">{source.description}</h2>
-                      <p class="lp__gridItemText-md">{source.content}</p>
-                      {source.author ? <p class="lp__gridItemText-md lp__gridItemText-sm-bw"><strong><i class="medium material-icons">account_circle</i> {source.author}</strong> on {getfulldate(source.publishedAt)}</p> : null}
+                  <span onClick={() => { setDisplay(false); }} className="close">&times;</span>
+                  <div className="top-left1">{index + 1}/{news.length}</div>
+                  <section className="lp__grid">
+                    <div className="lp__gridItem lp__gridItem__text">
+                      <a href={source.url} className="lp__gridItemText-sm">{source.title}</a>
+                      <h2 className="lp__gridItemText-lg">{source.description}</h2>
+                      <p className="lp__gridItemText-md">{source.content}</p>
+                      {source.author ? <p className="lp__gridItemText-md lp__gridItemText-sm-bw"><strong><i className="medium material-icons">account_circle</i> {source.author}</strong> on {getfulldate(source.publishedAt)}</p> : null}
                     </div>
                   </section>
                 </div>
@@ -1171,10 +1170,10 @@ const About = ({ theme }) => {
           })
           }
           <button id="mod-goLeft" className="hoverable" onClick={() => { xm === 0 ? setXM(-100 * (news.length - 1)) : setXM(xm + 100); console.log(xm); }}>
-            <i class="large material-icons">chevron_left</i>
+            <i className="large material-icons">chevron_left</i>
           </button>
           <button id="mod-goRight" className="hoverable" onClick={() => { xm === -100 * (news.length - 1) ? setXM(0) : setXM(xm - 100); }}>
-            <i class="large material-icons">chevron_right</i>
+            <i className="large material-icons">chevron_right</i>
           </button>
         </div>
       </div>
@@ -1182,7 +1181,7 @@ const About = ({ theme }) => {
       <div className="row">
         {news.map((source, index) => (
           <div className="slide" key={index} >
-            <div class="button button2" onMouseEnter={() => {
+            <div className="button button2" onMouseEnter={() => {
               setXMM(parseInt(index) * -100);
             }}>
               <div className="polaroid"
@@ -1194,20 +1193,20 @@ const About = ({ theme }) => {
 
                 <div className="card" id={`${theme}` === 'standard' ? `stan-card` : `${theme}` === 'dark' ? `dark-card` : `${theme}` === 'green' ? `green-card` : `${theme}` === 'grey' ? `grey-card` : `${theme}` === 'red' ? `red-card` : `${theme}` === 'purple' ? `purple-card` : `${theme}` === 'indigo' ? `indigo-card` : `card`}>
                   <div style={{ backgroundImage: `url(${source.urlToImage}`, backgroundSize: "cover", backgroundRepeat: "no-repeat", height: "100%" }}>
-                    <div class="top-right">{index + 1}/{news.length}</div>
-                    <div class="top-left date">
-                      <span class="day">{setPubdate(source.publishedAt)}</span>
-                      <span class="month">{setPubmonth(source.publishedAt)}</span>
-                      <span class="year">{setPubyear(source.publishedAt)}</span>
-                      <span class="year">{setPubtime(source.publishedAt)}</span>
+                    <div className="top-right">{index + 1}/{news.length}</div>
+                    <div className="top-left date">
+                      <span className="day">{setPubdate(source.publishedAt)}</span>
+                      <span className="month">{setPubmonth(source.publishedAt)}</span>
+                      <span className="year">{setPubyear(source.publishedAt)}</span>
+                      <span className="year">{setPubtime(source.publishedAt)}</span>
                     </div>
-                    <div class="bottom-right">{source.source.name} </div>
+                    <div className="bottom-right">{source.source.name} </div>
 
                   </div>
-                  <div class="pol-container white-text">
-                    {source.title ? <p class="overflow-ellipsis">{source.title}</p> : null}<br />
+                  <div className="pol-container white-text">
+                    {source.title ? <p className="overflow-ellipsis">{source.title}</p> : null}<br />
                   </div>
-                  <div class="descontent white-text">
+                  <div className="descontent white-text">
                     <p>{source.description}</p>
                   </div>
                 </div>
@@ -1218,8 +1217,8 @@ const About = ({ theme }) => {
         ))}
       </div>
       {/* <div className="row">
-          <button className="goPrevious left" onClick={previousPage}><i class="material-icons left">chevron_left</i>Previous</button>
-          <button className="goNext right" onClick={NextPage}><i class="material-icons right">chevron_right</i>Next</button>
+          <button className="goPrevious left" onClick={previousPage}><i className="material-icons left">chevron_left</i>Previous</button>
+          <button className="goNext right" onClick={NextPage}><i className="material-icons right">chevron_right</i>Next</button>
       </div> */}
     </div>
   );
@@ -1351,8 +1350,8 @@ const Dashboard = ({ theme }) => {
           />
         </div>
         <div className="col s6">
-          <div class="mapouter">
-            <div class="gmap_canvas">
+          <div className="mapouter">
+            <div className="gmap_canvas">
               <iframe width="400" height="500" id="gmap_canvas" src={`https://maps.google.com/maps?q=${city}&t=&z=8&ie=UTF8&iwloc=&output=embed`} frameborder="0" scrolling="no" marginheight="0" marginwidth="0">
               </iframe>
               {/* <a href="https://www.embedgooglemap.net">embedgooglemap.net</a> */}
@@ -1367,8 +1366,8 @@ const Dashboard = ({ theme }) => {
 //api_Key=AIzaSyB61Teb_BSil8QskHTDsHB0y_MAh7MNr4k
 
 {/* <div className="column">
-          {/* <div class="form-group">
-            <div class="col-sm-6 col-md-4 self-align-center">
+          {/* <div className="form-group">
+            <div className="col-sm-6 col-md-4 self-align-center">
               <select className="form-control" value={query} onChange={getSearch}>
                 <option>category</option>
                 <option value="business">Business</option>
